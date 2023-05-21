@@ -44,7 +44,6 @@ struct Ablak: public Window
     void valami()
     {
         string nev="sudoku" + to_string(rand()% 3 + 2) + ".txt";
-        cout<<nev<<endl;
         ifstream f(nev);
         for(int i=0;i<9;i++)
         {
