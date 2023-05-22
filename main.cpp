@@ -21,7 +21,7 @@ struct Ablak: public Window
     Gomb *w2;
     Ablak() : Window(800,600)
     {
-        ifstream f("sudoku.txt");
+        ifstream f("sudoku1.txt");
         for(int i=0;i<9;i++)
         {
             for(int j=0;j<9;j++)
@@ -43,7 +43,8 @@ struct Ablak: public Window
     }
     void valami()
     {
-        string nev="sudoku" + to_string(rand()% 3 + 2) + ".txt";
+        string nev="sudoku" + to_string(rand()% 4 + 1) + ".txt";
+        cout<<nev<<endl;
         ifstream f(nev);
         for(int i=0;i<9;i++)
         {
